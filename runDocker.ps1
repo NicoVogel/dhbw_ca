@@ -40,5 +40,5 @@ if($CONTAINER_ID){
   docker start $CONTAINER_ID
 }
 else{
-  docker run -d -p 5900:5900 -v $MOUNT_PATH/dosbox:/dosbox -v $MOUNT_PATH/verilog:/verilog --name $CONTAINER_NAME $IMAGE_NAME
+  docker run -d -p 5900:5900 -v $MOUNT_PATH/dosbox:/dosbox/bin -v $MOUNT_PATH/verilog:/verilog --name $CONTAINER_NAME $IMAGE_NAME
 }

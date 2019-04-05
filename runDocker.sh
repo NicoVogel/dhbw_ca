@@ -17,7 +17,7 @@ if [[ ! -z $CONTAINER_ID ]]; then
 else
   docker run -d \
     -p 5900:5900 \
-	  -v $MOUNT_PATH/dosbox:/dosbox \
+	  -v $MOUNT_PATH/dosbox:/dosbox/bin \
 	  -v $MOUNT_PATH/verilog:/verilog \
 	  --name $CONTAINER_NAME \
     $IMAGE_NAME
