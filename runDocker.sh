@@ -12,7 +12,7 @@ if [[ $1 == *"r"* ]] && [[ ! -z $CONTAINER_ID ]]; then
   CONTAINER_ID=""
 fi
 
-if [[ -z $CONTAINER_ID ]]; then
+if [[ ! -z $CONTAINER_ID ]]; then
   docker start $CONTAINER_ID
 else
   docker run -d \
