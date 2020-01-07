@@ -28,7 +28,7 @@ if($args[0] -Match "t"){
 $IMAGE_NAME="birddock/computer-architecture"
 $CONTAINER_NAME="computer-architecture"
 
-$CONTAINER_ID=docker ps -q -f name=$CONTAINER_NAME
+$CONTAINER_ID=docker ps -q -f name="$CONTAINER_NAME"
 
 if(($args[0] -Match "r") -And ($CONTAINER_ID)){
   docker rm -vf $CONTAINER_ID

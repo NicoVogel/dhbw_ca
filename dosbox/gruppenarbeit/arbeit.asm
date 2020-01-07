@@ -61,15 +61,13 @@ clear_screen:
 ;------------------------------------------
 
 segment data_seg_8_2
-
 message db '8086 Assembler-Programmier-Uebung$'
 display_segment_with_first_line dd 0B800h:00A0h
 
+
 segment code_seg_8_2
 
-
 output:
-    
     mov ax, data_seg_8_2
     mov ds, ax
     
@@ -86,7 +84,9 @@ output:
 
 print_loop:
     ; get next char
-    mov al, [ds:si]
+    mov al, [si]
+
+    mov al, [bx + message]
 
     ; exit if end of string
     cmp al, '$'

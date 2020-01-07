@@ -133,3 +133,4 @@ my_array db 00h, 00h, 00h, 00h, 00h
 - [1] [The C Calling Convention and the 8086: Using the Stack Frame](http://ece425web.groups.et.byu.net/stable/labs/StackFrame.html)
 - [2] [x86 Assembly #9 - Calling Conventions | cdecl](https://www.youtube.com/watch?v=frqPX7EHscM)
 - [3] [8086+Assembly+programming](https://www.academia.edu/17747354/8086_Assembly_programming)
+- [4] [DOS interrupts](http://spike.scu.edu.au/~barry/interrupts.html#ah35)
